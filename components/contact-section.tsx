@@ -86,7 +86,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden"
+      className="py-12 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
@@ -94,8 +94,8 @@ export default function ContactSection() {
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full border border-teal-500/30 mb-6">
             <Sparkles className="w-4 h-4 text-teal-400 mr-2" />
             <span className="text-teal-300 text-sm font-medium">Biz bilan bog'laning</span>
@@ -108,7 +108,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Form */}
           <Card className="bg-white/5 backdrop-blur-sm border-white/10 shadow-2xl">
             <CardHeader>
@@ -240,7 +240,7 @@ export default function ContactSection() {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-4">
             <Card className="bg-white/5 backdrop-blur-sm border-white/10 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
@@ -301,17 +301,17 @@ export default function ContactSection() {
         </div>
 
         {/* Footer */}
-        <div className="mt-20 pt-12 border-t border-white/10 text-center">
-          <div className="flex items-center justify-center mb-4">
-            <div className="bg-gradient-to-r from-teal-400 to-emerald-400 w-10 h-10 rounded-xl flex items-center justify-center mr-3">
-              <Sparkles className="w-6 h-6 text-white" />
+        <div className="mt-12 pt-8 border-t border-white/10 text-center">
+          <div className="flex items-center justify-center mb-3">
+            <div className="bg-gradient-to-r from-teal-400 to-emerald-400 w-8 h-8 rounded-lg flex items-center justify-center mr-2">
+              <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <div className="text-2xl font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
+            <div className="text-lg font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
               Madad IT Academy
             </div>
           </div>
-          <p className="text-gray-300 mb-6">Kelajakni bugun o'rganing</p>
-          <div className="flex justify-center space-x-6 text-sm text-gray-400">
+          <p className="text-gray-300 mb-3 text-sm">Kelajakni bugun o'rganing</p>
+          <div className="flex justify-center space-x-4 text-xs text-gray-400">
             <span>© 2024 Madad IT Academy</span>
             <span>•</span>
             <span>Barcha huquqlar himoyalangan</span>

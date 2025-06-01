@@ -31,7 +31,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+      className="py-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
@@ -40,8 +40,8 @@ export default function AboutSection() {
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full border border-teal-500/30 mb-6">
             <Sparkles className="w-4 h-4 text-teal-400 mr-2" />
             <span className="text-teal-300 text-sm font-medium">Bizning afzalliklarimiz</span>
@@ -55,7 +55,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -74,7 +74,7 @@ export default function AboutSection() {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm rounded-3xl p-12 text-center border border-white/10">
+        <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/10">
           <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent mb-6">
             Bizning missiyamiz
           </h3>

@@ -39,7 +39,7 @@ export default function SuccessSection() {
   return (
     <section
       id="success"
-      className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+      className="py-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
@@ -47,8 +47,8 @@ export default function SuccessSection() {
         <div className="absolute bottom-20 left-10 w-72 h-72 bg-green-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full border border-teal-500/30 mb-6">
             <Sparkles className="w-4 h-4 text-teal-400 mr-2" />
             <span className="text-teal-300 text-sm font-medium">Bitiruvchilarimiz</span>
@@ -62,7 +62,7 @@ export default function SuccessSection() {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">
               <div
@@ -76,7 +76,7 @@ export default function SuccessSection() {
         </div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}

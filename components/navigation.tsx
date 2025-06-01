@@ -29,39 +29,39 @@ export default function Navigation() {
         isScrolled ? "bg-slate-900/95 backdrop-blur-md shadow-2xl border-b border-white/10" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop Navigation */}
         <div className="hidden md:flex justify-between items-center py-4">
           <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-r from-teal-400 to-emerald-400 w-10 h-10 rounded-xl flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" />
+            <div className="bg-gradient-to-r from-teal-400 to-emerald-400 w-8 h-8 lg:w-10 lg:h-10 rounded-xl flex items-center justify-center">
+              <Sparkles className="w-4 h-4 lg:w-6 lg:h-6 text-white" />
             </div>
-            <div className="text-2xl font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
+            <div className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
               Madad IT Academy
             </div>
           </div>
-          <div className="flex items-center space-x-8 text-sm font-semibold">
+          <div className="flex items-center space-x-4 lg:space-x-8 text-sm font-semibold">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg hover:bg-white/5"
+              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-3 lg:px-4 py-2 rounded-lg hover:bg-white/5"
             >
               BIZ HAQIMIZDA
             </button>
             <button
               onClick={() => scrollToSection("courses")}
-              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg hover:bg-white/5"
+              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-3 lg:px-4 py-2 rounded-lg hover:bg-white/5"
             >
               KURSLAR
             </button>
             <button
               onClick={() => scrollToSection("success")}
-              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg hover:bg-white/5"
+              className="text-white/80 hover:text-teal-400 transition-all duration-300 hover:scale-105 px-3 lg:px-4 py-2 rounded-lg hover:bg-white/5"
             >
               MUVAFFAQIYAT
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-6 py-2 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-teal-500/25"
+              className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white px-4 lg:px-6 py-2 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-teal-500/25"
             >
               ALOQA
             </button>
@@ -74,7 +74,7 @@ export default function Navigation() {
             <div className="bg-gradient-to-r from-teal-400 to-emerald-400 w-8 h-8 rounded-lg flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
-            <div className="text-xl font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
+            <div className="text-lg sm:text-xl font-bold bg-gradient-to-r from-white to-teal-100 bg-clip-text text-transparent">
               Madad IT
             </div>
           </div>

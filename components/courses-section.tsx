@@ -63,7 +63,7 @@ export default function CoursesSection() {
   return (
     <section
       id="courses"
-      className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden"
+      className="py-12 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
@@ -71,8 +71,8 @@ export default function CoursesSection() {
         <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-6 relative z-10">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full border border-teal-500/30 mb-6">
             <Sparkles className="w-4 h-4 text-teal-400 mr-2" />
             <span className="text-teal-300 text-sm font-medium">Professional ta'lim</span>
@@ -85,7 +85,7 @@ export default function CoursesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course, index) => (
             <Card
               key={index}
@@ -130,7 +130,7 @@ export default function CoursesSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Button
             size="lg"
             className="bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-600 hover:to-emerald-600 text-white font-semibold px-10 py-4 rounded-2xl text-lg transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-teal-500/25"
